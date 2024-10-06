@@ -7,7 +7,7 @@
 
 body {
     background-color: lightgray;
-    font-family: 'ForcedSquare', Arial, sans-serif;
+    font-family: 'ForcedSquare' !important;
 }
 
 textarea {
@@ -22,5 +22,29 @@ textarea {
 
 .window-body {
     padding: 10px;
+    font-family: 'ForcedSquare', Arial, sans-serif;
 }
 
+.title-bar {
+    font-family: "ForcedSquare";
+    background: linear-gradient(
+        180deg,
+        rgba(9, 151, 255, 1) 0%,
+        rgba(0, 83, 238, 1) 8%,
+        rgba(0, 80, 238, 1) 40%,
+        rgba(0, 102, 255, 1) 88%,
+        rgba(0, 102, 255, 1) 93%,
+        rgba(0, 91, 255, 1) 95%,
+        rgba(0, 61, 215, 1) 96%,
+        rgba(0, 61, 215, 1) 100%
+    );
+    padding: 3px 5px 3px 3px;
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    font-size: 13px;
+    text-shadow: 1px 1px #0f1089;
+    height: 21px;
+}
