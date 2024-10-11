@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="window" style="width: 100%">
-        <div class="title-bar">
-          <div class="title-bar-text">A Complete Window</div>
+    <div class="window" style="width: 90%; height: 50%; display: flex; flex-direction: column; box-sizing: border-box;">
+        <div class="title-bar" style="display: flex; justify-content: center; align-items: center;">
+          <div class="title-bar-text" style="flex: 1; text-align: center;">A Complete Window</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -18,10 +18,10 @@
           </div>
         </div>
         <div class="window-body">
-            <button id="start-button">Start Typing Test</button>
+            <button id="start-button" style="font-family: ForcedSquare">Start Typing Test</button>
             
             <label for="text24">Type Here</label>
-            <textarea id="text24" rows="4"></textarea>
+            <textarea id="text24" style="display: flex;"></textarea>
 
             <div id="result"></div>
         </div>

@@ -25,7 +25,7 @@ const typingSounds = [
 startButton.addEventListener('click', () => {
     if (!isTyping) {
         isTyping = true;
-        userInputElement.value = '';
+        userInputElement.value = 'Start typing here...';
         userInputElement.focus();
         resultElement.textContent = '';
         startTypingTest();
@@ -33,7 +33,6 @@ startButton.addEventListener('click', () => {
 });
 
 userInputElement.addEventListener('input', () => {
-
 
     const randomSoundIndex = Math.floor(Math.random() * typingSounds.length);
     const typingSound = new Audio(typingSounds[randomSoundIndex]);
