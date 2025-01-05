@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows XP Style Login</title>
+  <style>
+    body {
+      background-color: #003399; /* Windows XP blue */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 300px;
+    }
+
+    .login-box img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .login-box h2 {
+      margin: 0;
+      color: #0055cc; /* Blue color for Windows XP */
+      font-size: 1.2em;
+    }
+
+    .login-box input[type="password"] {
+      width: calc(100% - 30px);
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .login-box button {
+      padding: 10px 20px;
+      background-color: #0055cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #0044aa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="https://via.placeholder.com/80" alt="Profile Picture">
+    <h2>Administrator</h2>
+    <input type="password" placeholder="Type your password">
+    <button>&#10132;</button> <!-- Unicode arrow -->
+  </div>
+
+</body>
+</html>

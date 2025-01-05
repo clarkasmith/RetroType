@@ -7,6 +7,7 @@ const resultElement = document.getElementById('result');
 let textToType = "This is a typing test.";
 let isTyping = false;
 
+// WAV files for each typing sound (from MonkeyType) to randomly select from upon each keypress
 const typingSounds = [
     'sounds/click1_1.wav',
     'sounds/click1_2.wav',
@@ -21,6 +22,20 @@ const typingSounds = [
     'sounds/click1_11.wav',
     'sounds/click1_12.wav'
 ];
+
+let timer_text = document.querySelector(".curr_time");
+let accuracy_text = document.querySelector(".curr_accuracy");
+let error_text = document.querySelector(".curr_errors");
+let cpm_text = document.querySelector(".curr_cpm");
+let wpm_text = document.querySelector(".curr_wpm");
+let quote_text = document.querySelector(".quote");
+let input_area = document.querySelector(".input_area");
+let restart_btn = document.querySelector(".restart_btn");
+let cpm_group = document.querySelector(".cpm");
+let wpm_group = document.querySelector(".wpm");
+let error_group = document.querySelector(".errors");
+let accuracy_group = document.querySelector(".accuracy");
+
 
 startButton.addEventListener('click', () => {
     if (!isTyping) {

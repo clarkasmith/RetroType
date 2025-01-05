@@ -21,12 +21,32 @@ body {
     height: 100vh;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors, .accuracy,
+.cpm, .wpm {
+  background-color: #ccda46;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: black 5px 8px 5px;
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
 textarea {
     font-family: "ForcedSquare";
     width: 100%;
     height: 90%;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 28px;
     border-top: 5px solid lightgray;
     border-left: 5px solid lightgray;
     resize: none;
